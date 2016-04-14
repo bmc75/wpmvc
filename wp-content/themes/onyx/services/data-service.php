@@ -6,7 +6,7 @@ class Data_Service {
 
 	public function __construct($data, $post_id="", $extra_data="") {
 
-		$this->service = $service;
+		$this->service = $data;
 
 		if( _exists($post_id) ) {
 			$this->post_id = $post_id;
