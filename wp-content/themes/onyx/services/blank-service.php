@@ -14,6 +14,9 @@ class Blank_Service {
 	public function load_view() {
 
 		$context = Timber::get_context();
+
+		$context['data'] = $this->data;
+
 		Timber::render( theme_views . '/blank.twig', $context);
 
 	}
