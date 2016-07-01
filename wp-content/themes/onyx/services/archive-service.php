@@ -15,6 +15,10 @@ class Archive_Service {
 
 		$context = Timber::get_context();
 		$context['posts'] = Timber::get_posts();
+
+		$context['data'] = $this->data;
+		$context['constants'] = get_slate_contants();
+
 		Timber::render( theme_views . '/archive.twig', $context);
 
 	}

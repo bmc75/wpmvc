@@ -14,6 +14,10 @@ class Home_Service {
 	public function load_view() {
 
 		$context = Timber::get_context();
+
+		$context['data'] = $this->data;
+		$context['constants'] = get_slate_contants();
+
 		Timber::render( theme_views . '/home.twig', $context);
 
 	}
