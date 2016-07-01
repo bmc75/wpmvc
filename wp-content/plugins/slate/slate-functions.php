@@ -129,3 +129,21 @@ function _exists($var) {
     return false;
 
 }
+
+function get_slate_constants() {
+
+  $constants = array(
+    'blog_name'    => _blog_name,
+    'blog_url'     => _blog_url,
+    'template_uri' => _template_uri,
+    'template_dir' => _template_dir,
+    'theme_views'  => theme_views,
+    'assets_uri'   => _assets_uri,
+    'css_uri'      => _css_uri,
+    'js_uri'       => _js_uri,
+    'images_uri'   => _images_uri,
+    'vendor_uri'   => _vendor_uri
+  );
+
+  return $constants;
+}
