@@ -3,7 +3,7 @@
  * Plugin Name: Slate
  * Plugin URI: http://mccoy.io
  * Description: Simplifies the WordPress API for theme and plugin development.
- * Version: 1.0
+ * Version: 2.0
  * Author: Brian McCoy
  * Author URI: http://mccoy.io
  */
