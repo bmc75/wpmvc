@@ -16,7 +16,7 @@ class Footer_Service {
 		$context = Timber::get_context();
 
 		$context['data'] = $this->data;
-		$context['constants'] = get_slate_contants();
+		$context['constants'] = get_slate_constants();
 
 		Timber::render( theme_views . '/footer.twig', $context);
 
